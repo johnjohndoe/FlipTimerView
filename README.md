@@ -14,44 +14,48 @@ FlipTimerView library for Android
 ## Getting started
 Add it in your root build.gradle at the end of repositories:
 
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+``` groovy
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
 Step 2. Add the dependency
 
-	dependencies {
-	        implementation 'com.github.anugotta:FlipTimerView:v1.3'
-	}
-  
+``` groovy
+dependencies {
+    implementation 'com.github.anugotta:FlipTimerView:v1.3'
+}
+```
 
 ## Usage
 Add the CountDownClock in your layout
 
-```
-  <com.asp.fliptimerviewlibrary.CountDownClock
-            android:id="@+id/timerProgramCountdown"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:clipChildren="false"
-            android:clipToPadding="false"
-            flipTimer:almostFinishedCallbackTimeInSeconds="5"
-            flipTimer:animationDuration="850"
-            flipTimer:countdownTickInterval="1000"
-            flipTimer:digitBottomDrawable="@drawable/background_bottom"
-            flipTimer:digitDividerColor="@color/transparent"
-            flipTimer:digitPadding="2dp"
-            flipTimer:digitTextColor="@color/black"
-            flipTimer:digitTextSize="24sp"
-            flipTimer:digitTopDrawable="@drawable/background_top"
-            flipTimer:digitWidth="28dp"
-            flipTimer:halfDigitHeight="22dp"
-            flipTimer:resetSymbol="8"
-            flipTimer:splitterPadding="0dp"
-    />
+``` xml
+<com.asp.fliptimerviewlibrary.CountDownClock
+      android:id="@+id/timerProgramCountdown"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:clipChildren="false"
+      android:clipToPadding="false"
+      flipTimer:almostFinishedCallbackTimeInSeconds="5"
+      flipTimer:animationDuration="850"
+      flipTimer:countdownTickInterval="1000"
+      flipTimer:digitBottomDrawable="@drawable/background_bottom"
+      flipTimer:digitDividerColor="@color/transparent"
+      flipTimer:digitPadding="2dp"
+      flipTimer:digitTextColor="@color/black"
+      flipTimer:digitTextSize="24sp"
+      flipTimer:digitTopDrawable="@drawable/background_top"
+      flipTimer:digitWidth="28dp"
+      flipTimer:halfDigitHeight="22dp"
+      flipTimer:resetSymbol="8"
+      flipTimer:splitterPadding="0dp"
+/>
 ```
 
 ## API
